@@ -1,0 +1,38 @@
+{
+  "name": "veasin/ff-windows",
+  "description": "Windows platform capability layer for ff: net, process, fs, folder, shortcut, clipboard, notify, dialog, system, registry.",
+  "homepage": "https://github.com/veasin/ff-windows",
+  "type": "library",
+  "license": "LGPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "V",
+      "email": "vea.git@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.5",
+    "veasin/ff": ">=0.4.7"
+  },
+  "suggest": {
+    "ext-com_dotnet": "Enables shortcut (.lnk) make/read and Shell COM interop; those functions return false/null when COM is unavailable."
+  },
+  "autoload": {
+    "psr-4": {
+      "ff\\windows\\": "src/"
+    },
+    "files": [
+      "src/guard.php",
+      "src/net.php",
+      "src/process.php",
+      "src/fs.php",
+      "src/folder.php",
+      "src/shortcut.php",
+      "src/clipboard.php",
+      "src/notify.php",
+      "src/dialog.php",
+      "src/system.php",
+      "src/registry.php"
+    ]
+  }
+}
